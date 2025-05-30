@@ -14,6 +14,20 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 354b173910823d449b9499c8c43697a6, type: 3}
+--- !u!114 &5697124132826544825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2160412093154943712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8a537452b95024c9a735a51a54421b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 5
+  moneyManager: {fileID: 0}
 --- !u!1 &3894274028105914019
 GameObject:
   m_ObjectHideFlags: 0
@@ -23,7 +37,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4642829218528071226}
-  - component: {fileID: 7403499764151878485}
+  - component: {fileID: 8095809439255259800}
+  - component: {fileID: 7260392713167216731}
+  - component: {fileID: 5219341341008310530}
   m_Layer: 0
   m_Name: prefab barril
   m_TagString: Untagged
@@ -46,7 +62,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7403499764151878485
+--- !u!114 &8095809439255259800
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,9 +71,41 @@ MonoBehaviour:
   m_GameObject: {fileID: 3894274028105914019}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dae5bfea0e794e841be4a1bd82c5bb3b, type: 3}
+  m_Script: {fileID: 11500000, guid: fe8a537452b95024c9a735a51a54421b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 5
+  moneyManager: {fileID: 0}
+--- !u!64 &7260392713167216731
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3894274028105914019}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 0}
+--- !u!54 &5219341341008310530
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3894274028105914019}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &2160412093154911296
 PrefabInstance:
   m_ObjectHideFlags: 0
